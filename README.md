@@ -10,7 +10,6 @@ This is a Node.js command-line application which takes the employees' informatio
 - CSS
 - Javascript
 - Node JS
-- Express JS
 - Jest
 
 # Project Demo
