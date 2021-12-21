@@ -1,3 +1,3 @@
-const employeeObjects = [];
+const employees = [];
 
-module.exports = employeeObjects;
+module.exports = employees;

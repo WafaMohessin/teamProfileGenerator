@@ -1,10 +1,10 @@
 const inquirer      = require('inquirer');
-const Engineer      = require('./lib/Engineer.js');
-const Intern        = require('./lib/Intern.js');
-const Manager       = require('./lib/Manager.js');
+const Engineer      = require('./public/Engineer.js');
+const Intern        = require('./public/Intern.js');
+const Manager       = require('./public/Manager.js');
 const fs            = require('fs');
 const generateHTML  = require('./src/generateHTML.js');
-let employeeObjects = require('./src/employeeObjects.js');
+let employees = require('./src/employees.js');
 
 const employee = function employee() {
     inquirer.prompt([
@@ -42,13 +42,13 @@ const employee = function employee() {
         
     .then((answers) => { 
         let newManager = new Manager(answers.name, answers.ID, answers.email, answers.officeNumber);
-        employeeObjects.push(newManager);
+        employees.push(newManager);
         if (answers.selectEmployee === 'Engineer') {
             engineer();
         } else if (answers.selectEmployee === 'Intern') {
             intern();
         }else {
-            fs.writeFile('./dist/index.html', generateHTML(employeeObjects), () => {
+            fs.writeFile('./dist/index.html', generateHTML(employees), () => {
                 console.log('Generating your HTML file....');
             });
         } 
@@ -91,14 +91,14 @@ function engineer() {
     ])
     .then(answers => { 
         let newEngineer = new Engineer(answers.engineerName, answers.engineerID, answers.engineerEmail, answers.engineerUsername);
-        employeeObjects.push(newEngineer);
+        employees.push(newEngineer);
 
         if (answers.selectEmployee === 'Engineer') {
             engineer();
         } else if (answers.selectEmployee === 'Intern') {
             intern();
         }else {
-            fs.writeFile('./dist/index.html', generateHTML(employeeObjects), () => {
+            fs.writeFile('./dist/index.html', generateHTML(employees), () => {
                 console.log('Generating your HTML file....');
             });
         } 
@@ -141,13 +141,13 @@ function intern() {
     ])
     .then((answers) => { 
         let newIntern = new Intern(answers.internName, answers.internID, answers.internEmail, answers.internSchool);
-        employeeObjects.push(newIntern);
+        employees.push(newIntern);
         if (answers.selectEmployee === 'Engineer') {
             engineer();
         } else if (answers.selectEmployee === 'Intern') {
             intern();
         }else {
-            fs.writeFile('./dist/index.html', generateHTML(employeeObjects), () => {
+            fs.writeFile('./dist/index.html', generateHTML(employees), () => {
                 console.log('Generating your HTML file....');
             });
         } 

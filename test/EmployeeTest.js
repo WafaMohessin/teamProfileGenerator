@@ -4,9 +4,9 @@ describe("Employee", () => {
   //Positive Test
   it("should create an object with 'name', 'id' and 'email' properties set to the 'name', 'id, and 'email' arguments provided when called with the 'new' keyword", () => {
       // Arrange
-    const name  = 'Johannes';
-    const id    = 5;
-    const email = 'johannes@gmail.com';
+    const name  = 'Wafa';
+    const id    = 3;
+    const email = 'wafamohessin@gmail.com';
 
     // Act
     const obj = new Employee(name, id, email);
@@ -17,9 +17,9 @@ describe("Employee", () => {
 
   it ("should return 'name' when the getName() method is called using the instantiated object", () => {
 
-    const name  = 'Johannes';
-    const id    = 5;
-    const email = 'johannes@gmail.com';
+    const name  = 'Wafa';
+    const id    = 3;
+    const email = 'wafamohessin@gmail.com';
 
     const obj = new Employee(name, id, email);
 
@@ -29,9 +29,9 @@ describe("Employee", () => {
 
   it ("should return 'id' when the getID() method is called using the instantiated object", () => {
 
-    const name  = 'Johannes';
-    const id    = 5;
-    const email = 'johannes@gmail.com';
+    const name  = 'Wafa';
+    const id    = 3;
+    const email = 'wafamohessin@gmail.com';
 
     const obj = new Employee(name, id, email);
 
@@ -41,9 +41,9 @@ describe("Employee", () => {
 
   it ("should return 'email' when the getEmail() method is called using the instantiated object", () => {
 
-    const name  = 'Johannes';
-    const id    = 5;
-    const email = 'johannes@gmail.com';
+    const name  = 'Wafa';
+    const id    = 3;
+    const email = 'wafamohessin@gmail.com';
 
     const obj = new Employee(name, id, email);
 
@@ -53,9 +53,9 @@ describe("Employee", () => {
 
   it ("should return the object when the getRole() method is called using the instantiated object", () => {
 
-    const name  = 'Johannes';
-    const id    = 5;
-    const email = 'johannes@gmail.com';
+    const name  = 'Wafa';
+    const id    = 3;
+    const email = 'WafaMohessin@gmail.com';
 
     const obj = new Employee(name, id, email);
 
