@@ -31,10 +31,10 @@ describe("Intern", () => {
   
     it ("should return 'id' when the getID() method is called using the instantiated object", () => {
   
-      const name  = 'Johannes';
-      const id    = 5;
-      const email = 'johannes@gmail.com';
-      const school = 'GCA';
+      const name  = 'Wafa';
+      const id    = 3;
+      const email = 'wafamohessin@gmail.com';
+      const school = 'MSU';
   
       const obj = new Intern(name, id, email, school);
   

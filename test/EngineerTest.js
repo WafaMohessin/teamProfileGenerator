@@ -59,7 +59,7 @@ describe("Engineer", () => {
   
       const name  = 'Wafa';
       const id    = 3;
-      const email = 'jwafamohessin@gmail.com';
+      const email = 'wafamohessin@gmail.com';
       const github = 'WafaMohessin';
   
       const obj = new Engineer(name, id, email, github);

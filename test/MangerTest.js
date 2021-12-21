@@ -18,10 +18,10 @@ describe("Manager", () => {
   
     it ("should return 'officeNumber' when the getOfficeNumber() method is called using the instantiated object", () => {
   
-      const name  = 'Johannes';
-      const id    = 5;
-      const email = 'johannes@gmail.com';
-      const officeNumber = 3;
+      const name  = 'Wafa';
+      const id    = 3;
+      const email = 'wafamohessin@gmail.com';
+      const officeNumber = 7;
   
       const obj = new Manager(name, id, email, officeNumber);
   
@@ -31,10 +31,10 @@ describe("Manager", () => {
   
     it ("should return 'id' when the getID() method is called using the instantiated object", () => {
   
-      const name  = 'Johannes';
-      const id    = 5;
-      const email = 'johannes@gmail.com';
-      const officeNumber = 3;
+      const name  = 'Wafa';
+      const id    = 3;
+      const email = 'wafamohessin@gmail.com';
+      const officeNumber = 7;
   
       const obj = new Manager(name, id, email, officeNumber);
   
