@@ -1,13 +1,13 @@
-const Intern = require('../lib/Intern.js');
+const Intern = require('../public/Intern.js');
 
 describe("Intern", () => {
     //Positive Test
-    it("should create an object with 'name', 'id', 'email' and 'school' properties set to the 'name', 'id,'email' and 'school' arguments provided when called with the 'new' keyword", () => {
+    it("creating an object with 'name', 'id', 'email' and 'school' properties set to the 'name', 'id,'email' and 'school' arguments provided when called with the 'new' keyword", () => {
         // Arrange
-      const name  = 'Johannes';
-      const id    = 5;
-      const email = 'johannes@gmail.com';
-      const school = 'GCA';
+      const name  = 'Wafa';
+      const id    = 3;
+      const email = 'wafamohessin@gmail.com';
+      const school = 'MSU';
 
       // Act
       const obj = new Intern(name, id, email, school);
@@ -16,12 +16,12 @@ describe("Intern", () => {
       expect(obj.name).toEqual(name);
     })
   
-    it ("should return 'school' when the getSchool() method is called using the instantiated object", () => {
+    it ("return 'school' when the getSchool() method is called using the instantiated object", () => {
   
-      const name  = 'Johannes';
-      const id    = 5;
-      const email = 'johannes@gmail.com';
-      const school = 'GCA';
+      const name  = 'Wafa';
+      const id    = 3;
+      const email = 'wafamohessin@gmail.com';
+      const school = 'MSU';
   
       const obj = new Intern(name, id, email, school);
   
@@ -29,7 +29,7 @@ describe("Intern", () => {
       expect(obj.getSchool()).toEqual(school);
     })
   
-    it ("should return 'id' when the getID() method is called using the instantiated object", () => {
+    it ("return 'id' when the getID() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -42,7 +42,7 @@ describe("Intern", () => {
       expect(obj.getID()).toEqual(id);
     })
   
-    it ("should return 'email' when the getEmail() method is called using the instantiated object", () => {
+    it ("return 'email' when the getEmail() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -55,7 +55,7 @@ describe("Intern", () => {
       expect(obj.getEmail()).toEqual(email);
     })
   
-    it ("should return the object when the getRole() method is called using the instantiated object", () => {
+    it ("return the object when the getRole() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;

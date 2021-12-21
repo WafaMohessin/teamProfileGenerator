@@ -2,7 +2,7 @@ const Engineer = require('../public/Engineer.js');
 
 describe("Engineer", () => {
     //Positive Test
-    it("should create an object with 'name', 'id', 'email' and 'github' properties set to the 'name', 'id,'email' and 'github' arguments provided when called with the 'new' keyword", () => {
+    it("creating an object with 'name', 'id', 'email' and 'github' properties set to the 'name', 'id,'email' and 'github' arguments provided when called with the 'new' keyword", () => {
         // Arrange
       const name  = 'Wafa';
       const id    = 3;
@@ -16,7 +16,7 @@ describe("Engineer", () => {
       expect(obj.name).toEqual(name);
     })
   
-    it ("should return 'github' when the getGithub() method is called using the instantiated object", () => {
+    it ("return 'github' when the getGithub() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -29,7 +29,7 @@ describe("Engineer", () => {
       expect(obj.getGithub()).toEqual(github);
     })
   
-    it ("should return 'id' when the getID() method is called using the instantiated object", () => {
+    it ("return 'id' when the getID() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -42,7 +42,7 @@ describe("Engineer", () => {
       expect(obj.getID()).toEqual(id);
     })
   
-    it ("should return 'email' when the getEmail() method is called using the instantiated object", () => {
+    it ("return 'email' when the getEmail() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -55,7 +55,7 @@ describe("Engineer", () => {
       expect(obj.getEmail()).toEqual(email);
     })
   
-    it ("should return the object when the getRole() method is called using the instantiated object", () => {
+    it ("return the object when the getRole() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;

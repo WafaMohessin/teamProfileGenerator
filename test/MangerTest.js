@@ -1,13 +1,13 @@
-const Manager = require('../lib/Manager.js');
+const Manager = require('../public/Manager.js');
 
 describe("Manager", () => {
     //Positive Test
-    it("should create an object with 'name', 'id', 'email' and 'officeNumber' properties set to the 'name', 'id,'email' and 'officeNumber' arguments provided when called with the 'new' keyword", () => {
+    it("creating an object with 'name', 'id', 'email' and 'officeNumber' properties set to the 'name', 'id,'email' and 'officeNumber' arguments provided when called with the 'new' keyword", () => {
         // Arrange
-      const name  = 'Johannes';
-      const id    = 5;
-      const email = 'johannes@gmail.com';
-      const officeNumber = 3;
+      const name  = 'Wafa';
+      const id    = 3;
+      const email = 'wafamohessin@gmail.com';
+      const officeNumber = 7;
 
       // Act
       const obj = new Manager(name, id, email, officeNumber);
@@ -16,7 +16,7 @@ describe("Manager", () => {
       expect(obj.name).toEqual(name);
     })
   
-    it ("should return 'officeNumber' when the getOfficeNumber() method is called using the instantiated object", () => {
+    it ("return 'officeNumber' when the getOfficeNumber() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -29,7 +29,7 @@ describe("Manager", () => {
       expect(obj.getOfficeNumber()).toEqual(officeNumber);
     })
   
-    it ("should return 'id' when the getID() method is called using the instantiated object", () => {
+    it ("return 'id' when the getID() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -42,7 +42,7 @@ describe("Manager", () => {
       expect(obj.getID()).toEqual(id);
     })
   
-    it ("should return 'email' when the getEmail() method is called using the instantiated object", () => {
+    it ("return 'email' when the getEmail() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
@@ -55,7 +55,7 @@ describe("Manager", () => {
       expect(obj.getEmail()).toEqual(email);
     })
   
-    it ("should return the object when the getRole() method is called using the instantiated object", () => {
+    it ("return the object when the getRole() method is called using the instantiated object", () => {
   
       const name  = 'Wafa';
       const id    = 3;
