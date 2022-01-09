@@ -1,4 +1,4 @@
-const Intern = require('../public/Intern.js');
+const Intern = require('../lib/Intern.js');
 
 describe("Intern", () => {
     //Positive Test

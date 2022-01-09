@@ -1,4 +1,4 @@
-const Manager = require('../public/Manager.js');
+const Manager = require('../lib/Manager.js');
 
 describe("Manager", () => {
     //Positive Test
