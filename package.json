@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/WafaMohessin/teamProfileGenerator#readme",
   "devDependencies": {
-    "jest": "^27.4.5"
+    "jest": "^27.4.7"
   }
 }
