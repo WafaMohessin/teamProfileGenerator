@@ -2,9 +2,9 @@ const Employee = require('../lib/Employee.js');
 
 describe("Employee", () => {
   //Positive Test
-  it("createing an object with 'name', 'id' and 'email' properties set to the 'name', 'id, and 'email' arguments provided when called with the 'new' keyword", () => {
+  it("creating an object with 'name', 'id' and 'email' properties set to the 'name', 'id, and 'email' arguments provided when called with the 'new' keyword", () => {
       // Arrange
-    const name  = 'Wafa';
+    const name  = 'wafa';
     const id    = 3;
     const email = 'wafamohessin@gmail.com';
 
@@ -15,9 +15,9 @@ describe("Employee", () => {
     expect(obj.name).toEqual(name);
   })
 
-  it ("return 'name' when the getName() method is called using the instantiated object", () => {
+  it ("returning'name' when the getName() method is called using the instantiated object", () => {
 
-    const name  = 'Wafa';
+    const name  = 'wafa';
     const id    = 3;
     const email = 'wafamohessin@gmail.com';
 
@@ -27,9 +27,9 @@ describe("Employee", () => {
     expect(obj.getName()).toEqual(name);
   })
 
-  it ("return 'id' when the getID() method is called using the instantiated object", () => {
+  it ("returning 'id' when the getID() method is called using the instantiated object", () => {
 
-    const name  = 'Wafa';
+    const name  = 'wafa';
     const id    = 3;
     const email = 'wafamohessin@gmail.com';
 
@@ -39,9 +39,9 @@ describe("Employee", () => {
     expect(obj.getID()).toEqual(id);
   })
 
-  it ("return 'email' when the getEmail() method is called using the instantiated object", () => {
+  it ("returning 'email' when the getEmail() method is called using the instantiated object", () => {
 
-    const name  = 'Wafa';
+    const name  = 'wafa';
     const id    = 3;
     const email = 'wafamohessin@gmail.com';
 
@@ -51,11 +51,11 @@ describe("Employee", () => {
     expect(obj.getEmail()).toEqual(email);
   })
 
-  it ("return the object when the getRole() method is called using the instantiated object", () => {
+  it ("returning the object when the getRole() method is called using the instantiated object", () => {
 
-    const name  = 'Wafa';
+    const name  = 'wafa';
     const id    = 3;
-    const email = 'WafaMohessin@gmail.com';
+    const email = 'wafamohessin@gmail.com';
 
     const obj = new Employee(name, id, email);
 

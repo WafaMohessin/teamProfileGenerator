@@ -1,10 +1,10 @@
-const inquirer = require('inquirer');
-const Engineer = require('./lib/Engineer.js');
-const Intern = require('./lib/Intern.js');
-const Manager = require('./lib/Manager.js');
-const fs = require('fs');
-const generateHTML = require('./src/generateHTML.js');
-let employeesCompany = require('./src/employeesCompany.js');
+const inquirer      = require('inquirer');
+const Engineer      = require('./lib/Engineer.js');
+const Intern        = require('./lib/Intern.js');
+const Manager       = require('./lib/Manager.js');
+const fs            = require('fs');
+const generateHTML  = require('./src/generateHTML.js');
+let employeeObjects = require('./src/employeeObjects.js');
 
 const employee = function employee() {
     inquirer.prompt([
@@ -42,13 +42,13 @@ const employee = function employee() {
         
     .then((answers) => { 
         let newManager = new Manager(answers.name, answers.ID, answers.email, answers.officeNumber);
-        employeesCompany.push(newManager);
+        employeeObjects.push(newManager);
         if (answers.selectEmployee === 'Engineer') {
             engineer();
         } else if (answers.selectEmployee === 'Intern') {
             intern();
         }else {
-            fs.writeFile('./dist/index.html', generateHTML(employeesCompany), () => {
+            fs.writeFile('./dist/index.html', generateHTML(employeeObjects), () => {
                 console.log('Generating your HTML file....');
             });
         } 
@@ -91,14 +91,14 @@ function engineer() {
     ])
     .then(answers => { 
         let newEngineer = new Engineer(answers.engineerName, answers.engineerID, answers.engineerEmail, answers.engineerUsername);
-        employeesCompany.push(newEngineer);
+        employeeObjects.push(newEngineer);
 
         if (answers.selectEmployee === 'Engineer') {
             engineer();
         } else if (answers.selectEmployee === 'Intern') {
             intern();
         }else {
-            fs.writeFile('./dist/index.html', generateHTML(employeesCompany), () => {
+            fs.writeFile('./dist/index.html', generateHTML(employeeObjects), () => {
                 console.log('Generating your HTML file....');
             });
         } 
@@ -141,13 +141,13 @@ function intern() {
     ])
     .then((answers) => { 
         let newIntern = new Intern(answers.internName, answers.internID, answers.internEmail, answers.internSchool);
-        employeesCompany.push(newIntern);
+        employeeObjects.push(newIntern);
         if (answers.selectEmployee === 'Engineer') {
             engineer();
         } else if (answers.selectEmployee === 'Intern') {
             intern();
         }else {
-            fs.writeFile('./dist/index.html', generateHTML(employeesCompany), () => {
+            fs.writeFile('./dist/index.html', generateHTML(employeeObjects), () => {
                 console.log('Generating your HTML file....');
             });
         } 
