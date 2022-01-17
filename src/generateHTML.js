@@ -75,7 +75,7 @@ let generateHTML = function generateHTML(employeeObjects) {
     </head>
     <body>
       <div class="container">
-        <h1 class="text-center mt-5">Winning Team</h1>
+        <h1 class="text-center mt-5">Great team</h1>
         <div class="cards">
         ${renderEmployees}
         </div>

@@ -8,6 +8,15 @@ describe("Employee", () => {
     const id    = 3;
     const email = 'wafamohessin@gmail.com';
 
+    /* const name  = 'wafa';
+    const id    = 3;
+    const email = 'wafamohessin@gmail.com'; 
+    const name  = 'wafa';
+    const id    = 3;
+    const email = 'wafamohessin@gmail.com';
+    const github = 'WafaMohessin'; */
+    
+
     // Act
     const obj = new Employee(name, id, email);
 

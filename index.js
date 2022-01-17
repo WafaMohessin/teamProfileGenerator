@@ -3,7 +3,10 @@ const Engineer      = require('./lib/Engineer.js');
 const Intern        = require('./lib/Intern.js');
 const Manager       = require('./lib/Manager.js');
 const fs            = require('fs');
+
+//link to html 
 const generateHTML  = require('./src/generateHTML.js');
+
 let employeeObjects = require('./src/employeeObjects.js');
 
 const employee = function employee() {
